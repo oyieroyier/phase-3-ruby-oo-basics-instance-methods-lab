@@ -1,13 +1,13 @@
-require 'spec_helper'
+require "spec_helper"
 
-describe 'Dog' do
-  it 'is defined' do
+describe "Dog" do
+  it "is defined" do
     expect(defined?(Dog)).to be_truthy
     expect(Dog).to be_a(Class)
   end
 
-  describe '#bark' do
-    it 'responds to the #bark instance method' do
+  describe "#bark" do
+    it "responds to the #bark instance method" do
       fido = Dog.new
       expect(fido).to respond_to(:bark)
     end
@@ -20,8 +20,8 @@ describe 'Dog' do
     end
   end
 
-  describe '#sit' do
-    it 'responds to the #sit instance method' do
+  describe "#sit" do
+    it "responds to the #sit instance method" do
       fido = Dog.new
       expect(fido).to respond_to(:sit)
     end
@@ -35,14 +35,14 @@ describe 'Dog' do
   end
 end
 
-describe 'Person' do
-  it 'is defined' do
+describe "Person" do
+  it "is defined" do
     expect(defined?(Person)).to be_truthy
     expect(Person).to be_a(Class)
   end
 
-  describe '#talk' do
-    it 'responds to the #talk instance method' do
+  describe "#talk" do
+    it "responds to the #talk instance method" do
       ada = Person.new
       expect(ada).to respond_to(:talk)
     end
@@ -55,8 +55,8 @@ describe 'Person' do
     end
   end
 
-  describe '#walk' do
-    it 'responds to the #walk instance method' do
+  describe "#walk" do
+    it "responds to the #walk instance method" do
       ada = Person.new
       expect(ada).to respond_to(:walk)
     end
